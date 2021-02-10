@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a797d3c8.chunk.css",
+    "main.css": "/static/css/main.47c82b7e.chunk.css",
     "main.js": "/static/js/main.dc82bf70.chunk.js",
     "main.js.map": "/static/js/main.dc82bf70.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6b3488d1.js",
@@ -8,21 +8,22 @@
     "static/js/2.79e87932.chunk.js": "/static/js/2.79e87932.chunk.js",
     "static/js/2.79e87932.chunk.js.map": "/static/js/2.79e87932.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.410a49878d6f45b80ee4fb708ffc4f4d.js": "/precache-manifest.410a49878d6f45b80ee4fb708ffc4f4d.js",
+    "precache-manifest.b62775e7352c616ac386b37d4f19e91c.js": "/precache-manifest.b62775e7352c616ac386b37d4f19e91c.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.a797d3c8.chunk.css.map": "/static/css/main.a797d3c8.chunk.css.map",
+    "static/css/main.47c82b7e.chunk.css.map": "/static/css/main.47c82b7e.chunk.css.map",
     "static/js/2.79e87932.chunk.js.LICENSE.txt": "/static/js/2.79e87932.chunk.js.LICENSE.txt",
     "static/media/DUT_INFO_2017_2019.pdf": "/static/media/DUT_INFO_2017_2019.da1cf39a.pdf",
     "static/media/L3_INFO_2019-2020.pdf": "/static/media/L3_INFO_2019-2020.a851b1bc.pdf",
     "static/media/LP3_INFO_2020-2021.pdf": "/static/media/LP3_INFO_2020-2021.d355bc19.pdf",
     "static/media/Observation_stage.pdf": "/static/media/Observation_stage.a7cccd23.pdf",
     "static/media/baertromain.jpg": "/static/media/baertromain.114b004c.jpg",
+    "static/media/custom.scss": "/static/media/fontawesome-webfont.fee66e71.woff",
     "static/media/resume.pdf": "/static/media/resume.692a887f.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.6b3488d1.js",
     "static/js/2.79e87932.chunk.js",
-    "static/css/main.a797d3c8.chunk.css",
+    "static/css/main.47c82b7e.chunk.css",
     "static/js/main.dc82bf70.chunk.js"
   ]
 }
