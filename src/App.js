@@ -6,7 +6,7 @@ import {
   about,
   repos,
   experience,
-  diplome,
+  formation,
   skills,
   getInTouch,
 } from "./editable-stuff/config.js";
@@ -38,16 +38,18 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
-      {diplome.show && (
+      {formation.show && (
         <Experience
-          heading={diplome.heading}
-          parts={diplome.parts}
+          heading={formation.heading}
+          parts={formation.parts}
+          navlink={formation.navlink}
         />
       )}
       {experience.show && (
         <Experience
           heading={experience.heading}
           parts={experience.parts}
+          navlink={experience.navlink}
         />
       )}
       {skills.show && (

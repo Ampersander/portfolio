@@ -4,7 +4,7 @@ import { useScrollPosition } from "../hooks/useScrollPosition";
 import useResizeObserver from "../hooks/useResizeObserver";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { mainBody, repos, about, skills, experience, diplome } from "../editable-stuff/config.js";
+import { mainBody, repos, about, skills, experience, formation } from "../editable-stuff/config.js";
 
 const Navigation = React.forwardRef((props, ref) => {
   const [isTop, setIsTop] = useState(true);
@@ -54,10 +54,10 @@ const Navigation = React.forwardRef((props, ref) => {
             Mon CV
           </Nav.Link>
 
-          {diplome.show && (
+          {formation.show && (
             <Nav.Link
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#diplome"}
+              href={process.env.PUBLIC_URL + "/#formation"}
             >
               Formations
             </Nav.Link>

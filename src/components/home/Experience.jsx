@@ -14,7 +14,8 @@ const Experience= ({ heading, parts,navlink }) => {
         <ExperienceCard
           key={`${heading}-${index}`}
           id={index}
-          value={part}       
+          value={part}
+          navlink={navlink}       
         />
       ))
 

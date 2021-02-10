@@ -111,5 +111,3 @@ You should have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/
     - Take a screenshot of your version and rename it "social-image.png" and place it there.  
     
 
-Facing issues? Feel free to contact at hashirshoaeb@gmail.com.
-

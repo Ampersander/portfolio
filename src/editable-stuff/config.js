@@ -17,7 +17,7 @@ const mainBody = {
     },
     {
       image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/romain-baert-768542184/",
+      url: "https://www.linkedin.com/in/romain-baert/",
     },
     
   ],
@@ -43,9 +43,9 @@ const about = {
   imageLink: require("../editable-stuff/baertromain.jpg"),
   imageSize: 375,
   message:
-    "Mon nom est Romain Baert. Je suis étudiant en Licence professionnelle métiers de l’informatique : conception, développement et test de logiciels spécialité développement web et mobile ainsi qu'en alternance à Canon." +
-     " Je suis passionné des technologies liées aux développement web et mobile et mon objectif est de poursuivre cette passion en apprenant un peu plus tout les jours."+
-     "Je suis actuellement à la recherche d'une alternance dans ce domaine à partir de septembre 2021 à août 2023.",
+    "Mon nom est Romain Baert. Je suis étudiant en licence professionnelle métiers de l’informatique : conception, développement et test de logiciels spécialité développement web et mobile ainsi qu'en alternance à Canon." +
+     " Je suis passionné des technologies liées aux développement web et mobile et mon objectif est de poursuivre cette passion en apprenant un peu plus tous les jours. "+
+     "Je suis actuellement à la recherche d'une alternance dans ce domaine à partir de septembre 2021 jusqu'à août 2023.",
   resume: require("../editable-stuff/resume.pdf"),
 };
 
@@ -56,10 +56,10 @@ const about = {
 //      i.e ["repository-1", "repo-2"]
 const repos = {
   show: true,
-  heading: "Projets récent",
+  heading: "Projets récents",
   gitHubUsername: "Ampersander", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
+  reposLength: 0,
+  specificRepos: ["chatbot-ai", "forum_histoire","react-native-movie", "portfolio"],
 };
 
 // Experience SECTION
@@ -69,25 +69,43 @@ const experience = {
     heading: "Expériences",
     navlink: "experience",
     parts: [
-      { name: "Renault aux Mans", description: "Développement web mobile, pour la gestion du stocks en temps réel avec les AGV. Technologie utilisé Symfony et React.",
-       img:'test', date:'2019'},
-      { name: "Canon à Liffré", description: "Développement d’applications web, pour la gestion des tâches de maintenance et pour la gestion des contrôles d’accès. ",
-       img:'test', date:'2020 - 2021' },    
+      { name: "Stage à Renault Le Mans", description: "Développement web pour mobile (Memor 10), création d'une application qui communique avec une API REST pour la gestion du stocks en temps réel avec des AGV. Technologies utilisées Symfony et React.",
+      pdf_img:'', date:'2019 (5 mois)', pdf_url:require('../editable-stuff/formation/Observation_stage.pdf')
+      , sec_url:'https://group.renault.com/groupe/implantations/usine-le-mans-aci/',
+      sec_url_name:'Site Renault Le Mans',
+      pdf_url_name:'Observation Stage',},
+      { name: "Alternance à Canon Bretagne", description: "Développement d'applications web, l'une d'entre elle utilisait une API REST qui a été fait conjoitement avec des collégues en Inde dans le but de communiquer avec un ERP SAP pour la gestion des tâches de maintenance. "+
+      "Un autre projet consister à la gestion des contrôles d’accès en communiquant avec des ESP32 afin de vérifier un répertoire LDAP.",
+      pdf_img:'', date:'2020 - 2021', pdf_url:''
+      , sec_url:'https://www.canon-bretagne.fr/',
+      sec_url_name:'Site Canon Bretagne',
+      pdf_url_name:'', },    
     ],
 };
 
-// Diplomes SECTION
-const diplome = {
+// Formation SECTION
+const formation = {
   show: true,
   heading: "Formations",
   navlink: "formation",
   parts: [
-    { name: "DUT Informatique à Laval", description: "fdgsdqfdfdsf", 
-    img:'test', date:'2017 - 2019', pdfInfo:'', },
-    { name: "Licence Informatique (Non obtenue) à Angers", description: "qdsffddfsqsffsdfsd",
-     img:'test', date:'2019 - 2020', pdfInfo:'',},
-    { name: "Licence professionnelle Licence professionnelle métiers de l’informatique : conception, développement et test de logiciels spécialité développement web et mobile à Orléans"
-    , description: "QSDFDFQSQFSDFD", img:'test', date:'2020 - 2021', pdfInfo:'', },
+    { name: "DUT Informatique à Laval", description: "", 
+    pdf_img:'', date:'2017 - 2019',
+     pdf_url:require('../editable-stuff/formation/DUT_INFO_2017_2019.pdf')
+    , sec_url:'http://www.univ-lemans.fr/fr/formation/catalogue-des-formations/diplome-universitaire-de-technologie-dut-DUT/sciences-technologies-sante-0004/dut-informatique-ADTIXXX_202.html',
+    sec_url_name:'Site formation',
+    pdf_url_name:'Pdf Formation', },
+    { name: "Licence Informatique (Non obtenue) à Angers", description: "",
+    pdf_img:'', date:'2019 - 2020', pdf_url:require('../editable-stuff/formation/L3_INFO_2019-2020.pdf')
+    ,sec_url:'http://formations.univ-angers.fr/fr/offre-de-formation/licence-lmd-LILMD/sciences-technologies-sante-STS/licence-informatique-IYLBKEAQ.html',
+    sec_url_name:'Site formation',
+    pdf_url_name:'Pdf Formation',},
+    { name: "Licence professionnelle métiers de l’informatique : conception, développement et test de logiciels spécialité développement web et mobile à Orléans"
+    , description: "", pdf_img:'', date:'2020 - 2021',
+     pdf_url:require('../editable-stuff/formation/LP3_INFO_2020-2021.pdf')
+    ,sec_url:'https://www.univ-orleans.fr/fr/iut-orleans/formation/informatique/licence-pro',
+    sec_url_name:'Site Formation',
+    pdf_url_name:'Pdf Formation', },
   ],
 };
 
@@ -134,9 +152,9 @@ const getInTouch = {
   show: true,
   heading: "Contact",
   message:
-    "Je suis actuellement à la recherche d'opportunités pour une alternance dans le développement web et mobile. Si vous connaissez des postes disponibles, si vous avez des questions ou si vous voulez simplement dire bonjour, n'hésitez pas à m'envoyer un courriel.",
+    "Je suis actuellement à la recherche d'opportunités pour une alternance dans le développement web et mobile. Si vous connaissez des postes disponibles, si vous avez des questions, n'hésitez pas à m'envoyer un courriel.",
   email: "",
 };
 
 
-export { navBar, mainBody, about, repos, skills, experience, diplome, getInTouch };
+export { navBar, mainBody, about, repos, skills, experience, formation, getInTouch };
