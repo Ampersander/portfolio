@@ -41,9 +41,9 @@ const CardButtons = ({ sec_url, pdf_url, pdf_url_name, sec_url_name, navlink }) 
           return (
             <a
             href={`${sec_url}`} target="_blank"
-            className="btn btn-outline-secondary mr-3" rel="noopener noreferrer"
+            className="btn btn-outline-secondary m-2 btnSecondary" rel="noopener noreferrer"
           >
-            <i navlink className="fas fa-industry px-2" /> 
+            <i navlink className="fa p-2">&#xf275;</i>
             {`${sec_url_name}`}
             </a>
           )
@@ -51,9 +51,9 @@ const CardButtons = ({ sec_url, pdf_url, pdf_url_name, sec_url_name, navlink }) 
           return (
             <a
             href={`${sec_url}`} target="_blank"
-            className="btn btn-outline-secondary mr-3 " rel="noopener noreferrer"
+            className="btn btn-outline-secondary m-2 btnSecondary" rel="noopener noreferrer"
           >
-            <i navlink className="fas fa-graduation-cap px-2" />
+            <i navlink className="fa p-2">&#xf19d;</i>
             {`${sec_url_name}`}
             </a> 
           )
@@ -62,8 +62,8 @@ const CardButtons = ({ sec_url, pdf_url, pdf_url_name, sec_url_name, navlink }) 
  {(() => {
         if (pdf_url !== '') {
           return (
-            <a href={`${pdf_url}`} target=" _blank" className="btn btn-outline-secondary">
-            <i className="fas fa-file-pdf px-2" /> 
+            <a href={`${pdf_url}`} target=" _blank" className="btn btn-outline-secondary m-2 btnSecondary">
+            <i className="fa p-2">&#xf1c1;</i>
             {`${pdf_url_name}`}
           </a>
           )

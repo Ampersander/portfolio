@@ -10,10 +10,10 @@ const Footer = (props) => {
       <Container>
         <Col md={0}>
           {props.children}
-          <i className="fas fa-at" /> : <a href="mailto:romain-b49460@hotmail.com">romain-b49460@hotmail.com</a>
+          <i className="fa px-2">&#xf1fa;</i> : <a href="mailto:romain-b49460@hotmail.com">romain-b49460@hotmail.com</a>
         </Col>
         <Col md={0}>
-          <i className="fas fa-phone" /> : <a href="tel:+33651841607">0651841607</a>
+          <i className="fa px-2">&#xf095;</i> : <a href="tel:+33651841607">0651841607</a>
         </Col>
       </Container>
     </footer>

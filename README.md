@@ -92,7 +92,7 @@ You should have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/
 
    ```bash
     npm run build
-    npm run deploy
+    npm run custom-deploy
    ```
 
    Or for deployment at \<username>.github.io, refer [READMEdocs/custom-deployment.md](./READMEdocs/custom-deployment.md) and [pages.js](./pages.js)

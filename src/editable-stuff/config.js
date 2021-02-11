@@ -12,11 +12,11 @@ const mainBody = {
   message: "Développeur Full Stack",
   icons: [
     {
-      image: "fa-github",
+      image: 'github',
       url: "https://github.com/Ampersander",
     },
     {
-      image: "fa-linkedin",
+      image:'linkedin',
       url: "https://www.linkedin.com/in/romain-baert/",
     },
     
@@ -40,7 +40,7 @@ const mainBody = {
 const about = {
   show: true,
   heading: "À propos de moi",
-  imageLink: require("../editable-stuff/baertromain.jpg"),
+  imageLink: require("../editable-stuff/profil.jpeg"),
   imageSize: 375,
   message:
     "Mon nom est Romain Baert. Je suis étudiant en licence professionnelle métiers de l’informatique : conception, développement et test de logiciels spécialité développement web et mobile ainsi qu'en alternance à Canon." +
@@ -69,13 +69,13 @@ const experience = {
     heading: "Expériences",
     navlink: "experience",
     parts: [
-      { name: "Stage à Renault Le Mans", description: "Développement web pour mobile (Memor 10), création d'une application qui communique avec une API REST pour la gestion du stocks en temps réel avec des AGV. Technologies utilisées Symfony et React.",
+      { name: "Stage à Renault Le Mans", description: "Développement d'applications web, l'une d'entre elle utilisait une API REST qui a été fait conjoitement avec des collégues en Inde dans le but de communiquer avec un ERP SAP pour la gestion des tâches de maintenance. "+
+      "Un autre projet consister à la gestion des contrôles d’accès en communiquant avec des ESP32 afin de vérifier un répertoire LDAP.",
       pdf_img:'', date:'2019 (5 mois)', pdf_url:require('../editable-stuff/formation/Observation_stage.pdf')
       , sec_url:'https://group.renault.com/groupe/implantations/usine-le-mans-aci/',
       sec_url_name:'Site Renault Le Mans',
       pdf_url_name:'Observation Stage',},
-      { name: "Alternance à Canon Bretagne", description: "Développement d'applications web, l'une d'entre elle utilisait une API REST qui a été fait conjoitement avec des collégues en Inde dans le but de communiquer avec un ERP SAP pour la gestion des tâches de maintenance. "+
-      "Un autre projet consister à la gestion des contrôles d’accès en communiquant avec des ESP32 afin de vérifier un répertoire LDAP.",
+      { name: "Alternance à Canon Bretagne", description:"Développement web pour mobile (Memor 10), création d'une application qui communique avec une API REST pour la gestion du stocks en temps réel avec des AGV. Technologies utilisées Symfony et React." ,
       pdf_img:'', date:'2020 - 2021', pdf_url:''
       , sec_url:'https://www.canon-bretagne.fr/',
       sec_url_name:'Site Canon Bretagne',
